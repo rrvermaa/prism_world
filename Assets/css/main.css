@@ -1,0 +1,160 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+   
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    transition: all 300ms ease-in-out;
+} 
+.logo{
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: purple;
+    
+}
+.link{
+    position: relative;
+   
+}
+.link::after{
+    
+    content: "";
+    position: absolute;
+    background-color: rgb(102, 36, 255);
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    right:unset;
+    left: 0;
+    transition: width .4s linear;
+}
+.link:hover::after{
+    width: 100%;
+}
+li{
+    padding: .5em 1.5em;
+}
+    
+nav ul{
+    list-style-type:none ;
+    display: flex;
+}
+
+.btn{
+    margin: .9rem;
+    cursor: pointer;
+}
+.btn{
+    background-color: rgb(0, 0, 0);
+    color: #fff;;
+    font-weight: 700;
+    padding: 0;
+}
+.btn-content{
+    padding: 0 1rem;
+}
+
+.inner{
+    width: 80%;
+    margin: 0 auto;
+}
+h1{
+    margin-top: 4rem;
+    font-size: 3rem;
+}
+h2{
+    margin-top: 2rem;
+}
+
+
+/* Scrool stuff */
+.scroll-down header{
+    transform: translate3d(0,-100%,0);
+}
+.scroll-down header{
+    filter: drop-shadow(0 -10px -20px rgb(0, 0, 0))
+}
+
+
+/* Section 1
+.container{
+    padding: 7rem 0 0 0;
+} */
+.pw-round-btn{
+    background-color:  rgb(102, 36, 255);
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 50%;
+
+}
+.pw-txt1{
+    font-size: 6rem;
+    margin: 0;
+}
+.pw-txt3{
+    font-size:2.3rem;
+}
+.pw-txt1 span,.pw-txt3 span {
+    font-weight: 550;
+}
+.media{
+    transform: translate(63%, 0px);
+    transition: .8s linear;
+
+}
+.media:hover{
+    transform: translate(15%, 0px);
+}
+.outer{
+    padding: 7rem 0 0  ;
+    width: 90%;
+}
+.video{
+    position: absolute;
+    top: 0;
+    
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    float: right;
+    
+}
+.video-box{
+    aspect-ratio:9/10;
+    transform: translateX(2.6%);
+    position: absolute;
+    top: 0;
+    width: 66rem;
+    margin-top: 8rem;
+    height: 70%;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+.extra{
+    height: 45vh;
+}
